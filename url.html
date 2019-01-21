@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>url</title>
+    <style>
+        #wrapper{
+            width: 100%;
+            height: 1600px;
+            background: gray;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+    <a href="images/face2.jpg">face2</a>
+    <a href="../birth/images/face2.jpg">face22</a>
+    <!-- ../為回到父層，兩層以上再寫一次如../../ -->
+    <a href="mailto:XXXXX@gmail.com">mail addres</a>
+    <a href="images/face2.jpg" target="_blank">open in new browser</a>
+    <!--  target  _self為預設，即在原頁開啟，_parent在父層開啟 -->
+
+    <h1 id="top">123</h1>
+    <a href="#top" style="position: absolute; bottom: 0;">back</a>
+    <!-- 回到TOP的位置 -->
+    <!-- 如要連結到某網頁的某個ID上，則在A的連結後方加上#ID，如<a href="WWW.xxx.COM/#id"></a> -->
+    </div>     
+
+</body>
+</html>
