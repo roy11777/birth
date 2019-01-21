@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>table</title>
+</head>
+<body>
+    <table>
+        <tr>
+            
+            <td>item1</td>
+            <td>item2</td>
+            <td>item3</td>
+        </tr>
+        <tr>
+        
+            <td>item1</td>
+            <td>item2</td>
+            <td>item3</td>
+        </tr>
+        <tr>
+            <td>item1</td>
+            <td>item2</td>
+            <td>item3</td>
+        </tr>
+    </table>
+
+
+    <table>
+        <tr>
+            <th></th>
+            <td scope="col">1</td>
+            <td scope="col">2</td>
+            <!-- scope用來表達欄列標題 -->
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>6</td>
+            <td>6</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            
+            <td>item1</td>
+            <td>item2</td>
+            <td>item3</td>
+        </tr>
+        <tr>
+            
+            <td rowspan="2">item1</td>
+            <td colspan="2" style="text-align:center">item2</td>
+            <!-- cospan合併欄，數字代表要合併幾欄，並可下TEXT ALIGN跨欄置中 -->
+            <!-- rowspan相同意思，要把多了欄列記得砍掉 -->
+        </tr>
+        <tr>
+            
+            
+            <td>item2</td>
+            <td>item3</td>
+        </tr>
+    </table>
+
+<!-- 長表格可用thead集中寫標題，tbody集中寫參數內容，tfoot寫註腳 -->
+<!-- THEAD與TFOOT可讓表頭跟表尾不動滾動卷軸指滾中間表內容，但目前無瀏覽器預設支援如此 -->
+
+</body>
+</html>
