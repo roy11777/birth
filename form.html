@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>form</title>
+</head>
+<body>
+    <form action="http://www.xxx.com.tw" method="post">
+        <!-- 所有使用者輸入，要船速到伺服器端的資料都在這位置(URL)，使用POST字元較多 -->
+  
+    <p>username:
+        <input type="text" name="username" maxlength="10" size="20" value="text">
+        <!-- 輸入種類、NAME這邊是資料庫使用名稱，最好用通用的命名方式、最後是字數輸入上限 -->
+        <!-- SIZE為欄位寬度，舊用法 -->
+    </p>
+    <p>password
+        <input type="password" name="password" id="" maxlength="5">
+    </p>
+    <textarea name="comments" id="" cols="30" rows="10"></textarea>
+    <!-- col 寬 row高意見表 -->
+    <p>
+    <input type="radio" name="grnre" value="rock" checked="checked">BOOK
+    <!-- CHECK為預設進入選好的選項 -->
+    <!-- 單選紐，VALUE為選傳送到伺服器的值. -->
+    <!-- NAME 伺服器溝通的項目，所有選項NAME都該相同 -->
+    <input type="radio" name="grnre" value="rock">BOOK
+    <input type="radio" name="grnre" value="rock">BOOK
+    </p>
+
+    <p>
+        <!-- checkbox可複選 ,且可取消選擇-->
+        <input type="checkbox" name="service" id="" value="itunes">BOOK
+        <input type="checkbox" name="service" id="" value="spotify" checked="checked">BOOK
+        <input type="checkbox" name="service" id="" value="itunes">BOOK
+        <input type="checkbox" name="service" id="" value="itunes">BOOK
+    </p>
+
+    <p>how are you</p>
+    <select name="device" id="" size="3" multiple>
+        <!-- 加入multiple可多選，SIZE控制顯示選項數 -->
+        <option value="ipod" >ipod</option>
+        <option value="iphone" >iphone</option>
+        <option value="iphone" >iphone</option>
+        <option value="iphone" >iphone</option>
+        <option value="imac" selected="selected">imac</option>
+        <!-- 預載入IMAC選擇 -->
+    </select>
+    <p>
+    <input type="file" name="file1" id="">
+    <input type="submit" name="" id="" value="upload">
+    <!-- value這邊為將按鈕改成UPLOAD字樣 -->
+    <!-- 要有上船功能FORM METHOD必須為POST -->
+    </p>
+    <input type="reset" name="reset" id="" value="reset">
+    <!-- 將表格中資訊重製成原始設定狀態 -->
+   
+      <P>
+      <input type="image" src="images/face1.jpg" name="123" id="" width="50" height="50">
+      <!-- 將影像製作成按鈕 -->
+    </P>
+
+        <button>
+            <img src="images/face2.jpg" alt="" width="20" height="30">
+            <input type="hidden" name="123" id="">
+        </button>
+        <p>
+        <input type="button" name="" id="" value="123123" disabled>12321
+        <!-- 如加DISABLED則可讓此按鈕反灰無法點選 -->
+    </p>
+
+    <p>
+        <label> <input type="text" name="" id="">age</label>
+    </p>
+
+    <input type="radio" name="genfer" id="female" value="m">
+    <label for="female">female</label>
+    <!-- id要與FOR給的相同 -->
+
+    <fieldset>
+        <!-- 將表單群組起來 -->
+        <legend>new</legend>] 
+        <!-- LEGEND可直接寫在FIELDSET後用來標示整組表單用途，且會切在外框線上  -->
+    </fieldset>
+
+    <input type="date" name="date">
+    <!-- 日期表單 -->
+    <p>
+    <input type="email" name="" id="">
+    <!-- 用來輸入email,同時可驗證格式 -->
+</p>
+<p>
+    <input type="search" name="" id="" placeholder="dont">
+    <!-- placeholder使表格輸入前預設顯示字樣，點上去輸入東西就會消失 -->
+</p>
+</form>
+</body>
+</html>
